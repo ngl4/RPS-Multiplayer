@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>RPS-multiplayerGame</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!-- JQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Firebase CDN -->
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    
+</head>
+
+<body>
+
+    <div id="header" class="text-center p-5">
+        Rock, Paper, Scissors - Multiplayer Game!
+    </div>
+
+    <div class="container">
+        
+        <div id="body">
+
+            <div id="playersChoice" class="row">
+                <div id="player-1" class="col-md-5 w-100 border border-primary text-center" style="height: 250px; background-color: rgba(255,0,0,0.1);">
+                    <p class="mt-5 font-weight-bold">Player 1</p>
+                </div>
+
+                <div class="col-md-2">
+
+                </div>
+
+                <div id="player-2" class="col-md-5 w-100 border border-danger text-center" style="height: 250px; background-color: rgba(255,0,0,0.1);">
+                    <p class="mt-5 font-weight-bold">Player 2</p>
+                 </div>
+
+            </div>
+
+        </div>
+        
+        <br>
+
+        <div class="row">
+            <div class="col-md-12" style="height: 200px;">
+
+                <div id="result"></div>
+
+            </div>
+        </div>
+        
+        <br>
+
+        <div class="row">
+            <div class="col-md-12 w-100 border border-secondary" style="height: 350px;">
+                <div id="chat-box">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" style="height: 100px;">
+
+    </div>
+
+
+
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
