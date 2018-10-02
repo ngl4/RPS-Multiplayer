@@ -10,6 +10,33 @@
   };
   firebase.initializeApp(config);
 
+  var database = firebase.database();
+
+  $("#player-1").on("click", function() {
+
+    $("#player-1").hide();
+
+    var form = $("<form>");
+    var form_group = $("<div>");
+    form_group.addClass("form-group mt-3");
+    var form_label = $("<label>");
+    form_label.attr("for", "player-1-nameInput");
+    form_label.text("Enter Your Name:");
+    var form_input = $("<input>");
+    form_input.addClass("form-control w-50 m-auto");
+    form_input.attr("type", "text");
+    form_input.attr("id", "InputName");
+    form_input.attr("placeholder", "Enter Name");
+
+    form_group.append(form_label);
+    form_group.append(form_input);
+    form.append(form_group);
+
+    $("#player-1-div").append(form);
+
+
+  });
+
 
   //Once player 1 is clicked, SHOW input option for name then click submit
   //HIDE: the player 1 
